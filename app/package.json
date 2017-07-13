@@ -1,0 +1,11 @@
+{
+  "name": "zwiftgpsdesktop",
+  "version": "0.0.1",
+  "description": "A desktop application for ZwiftGPS with transparent overlay map window",
+  "main": "main.js",
+  "author": "Andy Lee <andy.lee.surfer@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "open": "0.0.5"
+  }
+}
