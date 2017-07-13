@@ -3,11 +3,15 @@
   "version": "0.0.1",
   "description": "A desktop installer with automatic update for ZwiftGPS",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ogadai/zwift-desktop.git"
+  },
   "scripts": {
     "postinstall": "install-app-deps",
     "start": "electron ./app --enable-logging",
     "dev": "NODE_ENV='development' npm run start",
-    "dist": "build --x64 --ia32"
+    "dist": "electron-builder --x64 --ia32 --publish always"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +23,7 @@
     "appId": "com.zwiftgps.desktop",
     "productName": "ZwiftGPS Desktop",
     "win": {
+      "publish": ["github"]
     },
     "nsis": {
 
